@@ -585,7 +585,7 @@ class LaravelLocalization {
     {
         $attributes = $this->extractAttributes($path);
 
-        $path = str_replace(url(), "", $path);
+        $path = str_replace($this->request->url(), "", $path);
         if ( $path[ 0 ] !== '/' )
         {
             $path = '/' . $path;
