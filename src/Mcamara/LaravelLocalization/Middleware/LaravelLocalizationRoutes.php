@@ -2,8 +2,9 @@
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Routing\Middleware;
 
-class LaravelLocalizationRoutes {
+class LaravelLocalizationRoutes implements Middleware {
 
     /**
      * Handle an incoming request.
